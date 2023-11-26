@@ -61,8 +61,8 @@ void initialize(int discs[SIZE])
 #endif
 }
 
-// { Left, Rhight, Up, Down,
-// UpperLeft, UpperRhight, LowerLeft, LowerRhight }
+// { Left, Right, Up, Down,
+// UpperLeft, UpperRight, LowerLeft, LowerRight }
 int directions[] = { -1, 1, -1 * COLUMN, COLUMN,
 -1 * COLUMN - 1, -1 * COLUMN + 1, COLUMN - 1 , COLUMN + 1 };
 const int directions_count = 8;
