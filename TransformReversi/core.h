@@ -1,5 +1,5 @@
 #pragma once
-// Implements the basic rules of othello. It also provides simple functions for them.
+// Implements the basic rules of reversi. It also provides simple functions for them.
 
 #define SQUARE
 #ifdef SQUARE
