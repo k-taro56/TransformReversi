@@ -1,0 +1,63 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = crlf
+insert_final_newline = true
+
+[*.cs]
+
+indent_size = 4
+indent_style = space
+
+# CA1304: Specify CultureInfo
+dotnet_diagnostic.CA1304.severity = warning
+
+# CA1305: Specify IFormatProvider
+dotnet_diagnostic.CA1305.severity = warning
+
+# CA1307: Specify StringComparison for clarity
+dotnet_diagnostic.CA1307.severity = warning
+
+# CA1309: Use ordinal StringComparison
+dotnet_diagnostic.CA1309.severity = suggestion
+
+# CA1310: Specify StringComparison for correctness
+dotnet_diagnostic.CA1310.severity = warning
+
+dotnet_diagnostic.CS9124.severity = error
+
+# IDE0008: Use explicit type instead of 'var'
+dotnet_diagnostic.IDE0008.severity = warning
+
+csharp_style_namespace_declarations= file_scoped:warning
+
+dotnet_naming_rule.private_or_internal_field_should_be_begin_with__.severity = suggestion
+dotnet_naming_rule.private_or_internal_field_should_be_begin_with__.symbols = private_or_internal_field
+dotnet_naming_rule.private_or_internal_field_should_be_begin_with__.style = begin_with__
+
+dotnet_naming_rule.private_or_internal_constants_field_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.private_or_internal_constants_field_should_be_pascal_case.symbols = private_or_internal_constants_field
+dotnet_naming_rule.private_or_internal_constants_field_should_be_pascal_case.style = pascal_case
+
+dotnet_naming_symbols.private_or_internal_field.applicable_kinds = field
+dotnet_naming_symbols.private_or_internal_field.applicable_accessibilities = internal, private
+dotnet_naming_symbols.private_or_internal_field.required_modifiers = 
+
+dotnet_naming_symbols.private_or_internal_constants_field.applicable_kinds = field
+dotnet_naming_symbols.private_or_internal_constants_field.applicable_accessibilities = internal, private
+dotnet_naming_symbols.private_or_internal_constants_field.required_modifiers = const
+
+dotnet_naming_style.begin_with__.required_prefix = _
+dotnet_naming_style.begin_with__.required_suffix = 
+dotnet_naming_style.begin_with__.word_separator = 
+dotnet_naming_style.begin_with__.capitalization = camel_case
+
+dotnet_naming_style.pascal_case.required_prefix = 
+dotnet_naming_style.pascal_case.required_suffix = 
+dotnet_naming_style.pascal_case.word_separator = 
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+
+[*.csproj]
+indent_size = 2
+indent_style = space
