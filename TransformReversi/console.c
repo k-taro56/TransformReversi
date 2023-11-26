@@ -255,7 +255,7 @@ void input(const int discs[SIZE], int* index, const struct board* board)
 			hStdin,      // input buffer handle
 			irInBuf,     // buffer to read into
 			128,         // size of read buffer
-			&cNumRead)) // number of records read
+			&cNumRead))  // number of records read
 		{
 			ErrorExit("ReadConsoleInput");
 		}
